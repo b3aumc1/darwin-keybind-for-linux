@@ -1,7 +1,7 @@
 {
   "name": "darwin-keybind-for-linux",
   "main": "./lib/darwin-keybind-for-linux",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provide darwin keybind for Linux",
   "keywords": [],
   "repository": "https://github.com/mtsmfm/darwin-keybind-for-linux",
