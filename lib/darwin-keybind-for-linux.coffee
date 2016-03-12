@@ -1,4 +1,5 @@
 path = require 'path'
+{TextEditor} = require 'atom'
 
 module.exports = DarwinKeybindForLinux =
   activate: (state) ->
@@ -10,5 +11,21 @@ module.exports = DarwinKeybindForLinux =
       document.body.classList.add('platform-darwin')
 
     atom.setBodyPlatformClass()
+
+    patch = (editor, functionName) ->
+      originalFunction = editor[functionName]
+
+      editor[functionName] = (params...) ->
+        atom.views.getView(@).component.domNode.blur()
+
+        process.nextTick =>
+          originalFunction.call(@, params...)
+
+    [
+      'copySelectedText'
+      'pasteText'
+      'cutSelectedText'
+    ].forEach (func) ->
+      patch(TextEditor.prototype, func)
 
   deactivate: ->
