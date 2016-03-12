@@ -2,7 +2,7 @@
   "name": "darwin-keybind-for-linux",
   "main": "./lib/darwin-keybind-for-linux",
   "version": "0.1.0",
-  "description": "A short description of your package",
+  "description": "Provide darwin keybind for Linux",
   "keywords": [],
   "repository": "https://github.com/mtsmfm/darwin-keybind-for-linux",
   "license": "MIT",
