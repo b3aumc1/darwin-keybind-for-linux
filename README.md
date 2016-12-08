@@ -1,3 +1,5 @@
 # Darwin Keybind for Linux
 
-Provide darwin keybind for Linux.
+https://atom.io/packages/darwin-keybind-for-linux
+
+Provide darwin keybind to Atom editor on Linux.
