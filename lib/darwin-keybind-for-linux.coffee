@@ -3,7 +3,7 @@ path = require 'path'
 
 module.exports = DarwinKeybindForLinux =
   activate: (state) ->
-    linuxCson = path.join(atom.keymaps.resourcePath, 'keymaps/linux.json')
+    linuxCson = path.join(atom.keymaps.resourcePath, 'keymaps/linux.cson')
     atom.keymaps.removeBindingsFromSource(linuxCson)
 
     atom.setBodyPlatformClass = ->

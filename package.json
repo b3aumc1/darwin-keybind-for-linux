@@ -7,7 +7,7 @@
   "repository": "https://github.com/mtsmfm/darwin-keybind-for-linux",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.12.6 <2.0.0"
   },
   "dependencies": {}
 }
